@@ -1,70 +1,91 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Productivity Tracker Extension
 
-## Available Scripts
+A Chrome extension that helps you track the time spent on different websites. This extension provides insights on your browsing habits, shows stats for each website, and offers productivity suggestions. Users can monitor weekly stats and set daily time goals for specific websites.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Website Time Tracking**: Tracks the time spent on each website and displays it in a readable format.
+- **Productivity Insights**: Highlights websites where time spent exceeds set goals, allowing users to adjust their browsing habits.
+- **Weekly Reports**: (Future Feature) See weekly stats for better insight into your productivity.
+- **Daily Time Goals**: (Future Feature) Set daily time goals for specific websites to manage time effectively.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Getting Started
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Follow these instructions to set up and run the extension in your Chrome browser.
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Chrome Browser**: The extension is designed for the Chrome browser.
+- **React**: Developed with React, so a basic understanding of React components may help if you want to modify the code.
+- **Chrome Extensions API**: Uses Chrome's Storage API to save and retrieve time-tracking data.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/productivity-tracker-extension.git
+   ```
+   
+2. **Navigate to the project directory**:
+   ```bash
+   cd productivity-tracker-extension
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Build the project**:
+   ```bash
+   npm run build
+   ```
 
-### `npm run eject`
+5. **Load the extension in Chrome**:
+   - Open Chrome and navigate to `chrome://extensions/`.
+   - Enable **Developer mode** (toggle in the top-right corner).
+   - Click **Load unpacked** and select the `build` folder from your project.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+6. **Pin and Open the Extension**:
+   - Pin the extension to your Chrome toolbar for quick access.
+   - Click on the extension icon to start tracking your browsing time!
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Dashboard**: The popup displays a list of websites visited along with the time spent on each.
+- **Time Format**: Time is displayed in minutes for easy readability.
+- **Stay Productive**: Monitor your stats and make adjustments to spend less time on distracting sites.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+```
+├── public/                  # Public assets
+├── src/                     # Source files
+│   ├── components/          # React components
+│   ├── background.js        # Background script for tracking
+│   ├── App.js               # Main App component
+│   └── index.css            # CSS styling
+├── manifest.json            # Chrome extension manifest
+└── README.md                # Project documentation
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you'd like to contribute to this project:
 
-### Code Splitting
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature-branch-name`.
+3. Make your changes and commit them: `git commit -m 'Add new feature'`.
+4. Push to the branch: `git push origin feature-branch-name`.
+5. Open a pull request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Future Improvements
 
-### Analyzing the Bundle Size
+- **Weekly Stats Dashboard**: A detailed report page to visualize productivity patterns over a week.
+- **Customizable Time Goals**: Set and track specific time goals for various websites.
+- **Reminders and Alerts**: Optional notifications to remind users when they exceed time goals.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Stay productive and make every minute count!**
